@@ -44,7 +44,11 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="HOORAY!!" />
-
+        <Switch
+            android:id="@+id/frosting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="frosting" />
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"

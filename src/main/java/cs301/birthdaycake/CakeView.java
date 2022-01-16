@@ -68,7 +68,7 @@ public class CakeView extends SurfaceView {
      * draws a candle at a specified position.  Important:  the left, bottom coordinates specify
      * the position of the bottom left corner of the candle
      */
-    public void drawCandle(Canvas canvas, float left, float bottom) {
+    public void drawCandle(Canvas canvas, float left, float bottom) { ;
         canvas.drawRect(left, bottom - candleHeight, left + candleWidth, bottom, candlePaint);
 
         //draw the outer flame
@@ -120,7 +120,9 @@ public class CakeView extends SurfaceView {
         canvas.drawRect(cakeLeft, top, cakeLeft + cakeWidth, bottom, cakePaint);
 
         //Now a candle in the center
-        drawCandle(canvas, cakeLeft + cakeWidth/2 - candleWidth/2, cakeTop);
+        drawCandle(canvas, 2*(cakeLeft + cakeWidth/2 - candleWidth/2)/3, cakeTop);
+        drawCandle(canvas, 4*(cakeLeft + cakeWidth/2 - candleWidth/2)/3, cakeTop);
+
 
     }//onDraw
 
